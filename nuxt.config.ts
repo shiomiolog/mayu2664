@@ -1,6 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  // future ブロックは削除します
+  compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxt/ui']
+  css: ['~/assets/css/main.css'],
+  modules: ['@nuxt/content', '@nuxt/ui'],
+
+  // Cloudflare設定は一旦コメントアウトのままでOKです
+  // nitro: {
+  //   preset: 'cloudflare-pages'
+  // }
 })
