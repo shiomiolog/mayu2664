@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "preview": "npm run build && npx wrangler pages dev .output/public",
+    "preview": "npm run build && nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
