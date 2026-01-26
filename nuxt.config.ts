@@ -1,18 +1,21 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
-  // future ブロックは削除します
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+
+  // スタイルシート
   css: ["~/assets/css/main.css"],
+
+  // モジュール
   modules: ["@nuxt/content", "@nuxt/ui"],
+
+  // ヘッダー・メタデータ設定
   app: {
     head: {
-      // ▼ ここにサイト名を設定
       title: "mayu2664.jp - KAWASHIMA Mayuのポートフォリオサイト",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        // SEO用の説明文も入れておくと親切です
         {
           name: "description",
           content: "KAWASHIMA Mayuのポートフォリオサイトです。",
@@ -21,8 +24,14 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
-  // Cloudflare設定は一旦コメントアウトのままでOKです
-  // nitro: {
-  //   preset: 'cloudflare-pages'
-  // }
+
+  // ▼▼▼ ここが今回追加する一番重要な設定です！ ▼▼▼
+  nitro: {
+    preset: "cloudflare-pages", // Cloudflare用の設定
+    prerender: {
+      crawlLinks: true, // リンクを辿ってページを作る
+      routes: ["/"], // 「トップページ(/)を絶対に作れ！」という命令
+      ignore: ["/200"], // エラー回避用
+    },
+  },
 });
