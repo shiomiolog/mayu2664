@@ -12,21 +12,39 @@ const { data: page } = await useAsyncData(route.path, () => {
 </script>
 
 <style scoped>
+:deep(h1) {
+  display: block !important;
+  font-size: 1.8rem !important;
+  font-weight: bold !important;
+  color: #2c2c2c !important;
+
+  margin-top: 1.15rem !important;
+  margin-bottom: 0.75em !important;
+
+  border-bottom: 2px solid #3b82f6 !important;
+  padding-bottom: 0.4rem !important;
+}
+
+:deep(h1)::first-letter {
+  color: #3b82f6 !important;
+  font-size: 2rem !important;
+}
 :deep(h2) {
   display: block !important;
   font-size: 1.6rem !important;
   font-weight: bold !important;
-  color: #111827 !important;
+  color: #2c2c2c !important;
 
   margin-top: 1.15rem !important;
   margin-bottom: 1.15rem !important;
 
-  border-bottom: 2px solid #3b82f6 !important; /* 青い下線 */
+  border-bottom: 2px solid #3b82f6 !important;
   padding-bottom: 0.4rem !important;
 }
 
 /* 本文の読みやすさ */
 :deep(p) {
+  color: #333 !important;
   font-size: 1.15rem !important;
   line-height: 1.5 !important;
   margin-bottom: 2rem !important;

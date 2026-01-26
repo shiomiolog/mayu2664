@@ -3,10 +3,14 @@ title: Welcome to mayu2664
 description: 技術者・研究者としてのポートフォリオサイトです。
 ---
 
-# Hello, World
+# About me
 
-これは Nuxt Content で管理されている Markdown ファイルです。
-研究実績などをここに記述していくことができます。
+- 法的氏名: KAWASHIMA Mayu  
+  Legal Name: KAWASHIMA Mayu
+- 国籍: 日本  
+  Nationality: Japan
+- 性別: 女性  
+  Gender: Female
 
 ## 学歴 (Education)
 
@@ -22,6 +26,17 @@ description: 技術者・研究者としてのポートフォリオサイトで�
 - 2024年04月 サイバー大学IT総合学部IT総合学科 復学  
   Apr 2024: Return to Cyber University.
 
+## 所属学会等 (Memberships)
+
+- 情報処理学会 (IPSJ) 学生会員  
+  Information Processing Society of Japan
+
+- 電子情報通信学会 (IEICE) 学生会員  
+  The Institute of Electronics, Information and Communication Engineers
+
+- 一般社団法人 MyDataJapan 学生会員  
+  MyData Japan
+
 ## 資格等 (Qualifications)
 
 - 2022年06月 ITパスポート試験 合格  
@@ -29,7 +44,22 @@ description: 技術者・研究者としてのポートフォリオサイトで�
 - 2023年01月 情報セキュリティマネジメント試験 合格  
   Information Security Management Examination qualified
 
-## 大会出場等（Competition participation, etc.）
+## 大会出場等（Participation in competitions）
 
 - 2019年12月 日本情報オリンピック予選 敢闘賞（予選Bランク）  
   December 2019: Japan Olympiad in Informatics Preliminary Competition, Fighting Spirit Award (Preliminary Rank B)
+
+<!--
+## 研究業績等 (Publications)
+
+-
+
+## 講演等 (Talks)
+
+-
+
+## 出版物等（Publications）
+
+-
+
+-->
