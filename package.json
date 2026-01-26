@@ -17,7 +17,6 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@nuxt/content": "^3.11.0",
-    "wrangler": "^4.60.0"
+    "@nuxt/content": "^3.11.0"
   }
 }
