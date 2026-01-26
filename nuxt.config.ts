@@ -9,7 +9,6 @@ export default defineNuxtConfig({
   // モジュール設定
   modules: ["@nuxt/content", "@nuxt/ui"],
 
-  // ▼ これを入れると、Markdownファイルを自動でページとして扱ってくれます
   content: {
     documentDriven: true,
   },
@@ -29,12 +28,11 @@ export default defineNuxtConfig({
     },
   },
 
-  // ▼ ここが「データベース警告」を消して表示させるための重要設定！
   nitro: {
-    preset: "cloudflare-pages-static", // 静的サイトとしてビルドするよう明示
+    preset: "cloudflare-pages",
     prerender: {
-      crawlLinks: true, // リンクをたどって全ページを生成
-      routes: ["/"], // トップページを確実に生成
+      crawlLinks: true,
+      routes: ["/"],
       ignore: ["/200"],
     },
   },
