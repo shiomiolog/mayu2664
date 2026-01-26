@@ -6,7 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "npm run build && nuxt preview",
+    "preview": "echo 'Skipping preview deploy'",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
