@@ -8,7 +8,7 @@ const profile = useProfile();
 
     <div class="max-w-[1000px] mx-auto px-6">
       <div class="flex flex-col md:flex-row md:gap-12 items-start relative">
-        <aside class="w-full md:w-1/4 md:sticky top-[56px] self-start h-fit">
+        <aside class="w-full md:w-1/4 md:sticky top-[64px] self-start h-fit">
           <div class="pt-6 md:pt- pb-6 md:pb-12 space-y-2 md:space-y-6">
             <div
               class="w-40 h-40 md:w-52 md:h-52 mx-auto md:mx-0 rounded-full bg-blue-50 flex items-center justify-center border-2 border-blue-100 overflow-hidden"

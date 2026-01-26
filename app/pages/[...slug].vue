@@ -21,14 +21,15 @@ const { data: page } = await useAsyncData(route.path, () => {
   margin-top: 1.15rem !important;
   margin-bottom: 0.75em !important;
 
-  border-bottom: 2px solid #3b82f6 !important;
+  border-bottom: 2px solid #69c1f5 !important;
   padding-bottom: 0.4rem !important;
 }
 
 :deep(h1)::first-letter {
-  color: #3b82f6 !important;
+  color: #0a9aee !important;
   font-size: 2rem !important;
 }
+
 :deep(h2) {
   display: block !important;
   font-size: 1.6rem !important;
@@ -38,37 +39,52 @@ const { data: page } = await useAsyncData(route.path, () => {
   margin-top: 1.15rem !important;
   margin-bottom: 1.15rem !important;
 
-  border-bottom: 2px solid #3b82f6 !important;
+  border-bottom: 2px solid #69c1f5 !important;
   padding-bottom: 0.4rem !important;
 }
 
-/* 本文の読みやすさ */
+:deep(h3) {
+  position: relative !important;
+  border-bottom: 5px solid #ddd !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1.15rem !important;
+  padding-bottom: 0.3rem !important;
+  font-size: 1.4rem !important;
+}
+
+:deep(h3:before) {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -5px !important;
+  width: 20% !important;
+  height: 5px !important;
+  content: "" !important;
+  background: #69c1f5 !important;
+}
+
 :deep(p) {
   color: #333 !important;
-  font-size: 1.15rem !important;
+  font-size: 1rem !important;
   line-height: 1.5 !important;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
-/* リスト全体の余白とスタイル */
 :deep(ul) {
-  list-style-type: disc !important; /* 黒丸を強制表示 */
-  margin-left: 1.5rem !important; /* 左側にインデント（隙間）を作る */
-  margin-bottom: 1rem !important; /* 下方向への隙間 */
+  list-style-type: disc !important;
+  margin-left: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
-/* 各リスト項目の調整 */
 :deep(li) {
-  font-size: 1.15rem !important;
-  line-height: 1.35 !important;
-  margin-bottom: 0.25rem !important; /* 項目同士の隙間 */
-  padding-left: 0.25rem !important; /* 黒丸と文字の間の微調整 */
-  color: #374151 !important; /* 本文に近いグレー */
+  font-size: 1.05rem !important;
+  line-height: 1.45 !important;
+  margin-bottom: 0.25rem !important;
+  padding-left: 0.25rem !important;
+  color: #374151 !important;
 }
 
-/* ネストされた（入れ子）リストがある場合 */
 :deep(ul ul) {
-  list-style-type: circle !important; /* 2階層目は白丸にする */
+  list-style-type: circle !important;
   margin-top: 0.25rem !important;
 }
 </style>

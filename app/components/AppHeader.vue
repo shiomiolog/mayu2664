@@ -1,5 +1,7 @@
 <template>
-  <header class="w-full shadow bg-white">
+  <header
+    class="sticky top-0 w-full shadow-sm bg-white/90 backdrop-blur-sm z-50"
+  >
     <div
       class="max-w-[1000px] mx-auto px-6 h-16 flex items-center justify-between"
     >
@@ -7,7 +9,7 @@
         >mayu2664.jp</NuxtLink
       >
 
-      <!--<nav class="hidden md:flex items-center gap-8">
+      <nav class="hidden md:flex items-center gap-8">
         <a
           v-for="link in navLinks"
           :key="link.href"
@@ -57,20 +59,16 @@
             </a>
           </nav>
         </div>
-      </Transition>-->
+      </Transition>
     </div>
   </header>
 </template>
 
-<!--<script setup lang="ts">
+<script setup lang="ts">
 const isOpen = ref(false);
 
-const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Education", href: "#education" },
-  { label: "Qualifications", href: "#qualifications" },
-];
-</script>-->
+const navLinks = [{ label: "Contact", href: "#contact" }];
+</script>
 
 <style scoped>
 .fade-enter-active,
