@@ -3,16 +3,20 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
 
-  // スタイルシート
+  // CSS設定
   css: ["~/assets/css/main.css"],
 
-  // モジュール
+  // モジュール設定
   modules: ["@nuxt/content", "@nuxt/ui"],
 
-  // ヘッダー・メタデータ設定
+  // ▼ これを入れると、Markdownファイルを自動でページとして扱ってくれます
+  content: {
+    documentDriven: true,
+  },
+
   app: {
     head: {
-      title: "mayu2664.jp - KAWASHIMA Mayuのポートフォリオサイト",
+      title: "mayu2664.jp - KAWASHIMA Mayu",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -25,13 +29,13 @@ export default defineNuxtConfig({
     },
   },
 
-  // ▼▼▼ ここが今回追加する一番重要な設定です！ ▼▼▼
+  // ▼ ここが「データベース警告」を消して表示させるための重要設定！
   nitro: {
-    preset: "cloudflare-pages", // Cloudflare用の設定
+    preset: "cloudflare-pages-static", // 静的サイトとしてビルドするよう明示
     prerender: {
-      crawlLinks: true, // リンクを辿ってページを作る
-      routes: ["/"], // 「トップページ(/)を絶対に作れ！」という命令
-      ignore: ["/200"], // エラー回避用
+      crawlLinks: true, // リンクをたどって全ページを生成
+      routes: ["/"], // トップページを確実に生成
+      ignore: ["/200"],
     },
   },
 });
