@@ -8,11 +8,6 @@ export default defineNuxtConfig({
 
   // モジュール設定
   modules: ["@nuxt/content", "@nuxt/ui"],
-
-  content: {
-    documentDriven: true,
-  },
-
   app: {
     head: {
       title: "mayu2664.jp - KAWASHIMA Mayu",
@@ -25,15 +20,6 @@ export default defineNuxtConfig({
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    },
-  },
-
-  nitro: {
-    preset: "cloudflare-pages",
-    prerender: {
-      crawlLinks: true,
-      routes: ["/"],
-      ignore: ["/200"],
     },
   },
 });
