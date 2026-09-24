@@ -2,8 +2,8 @@
     <main>
         <ProfileHero />
         <ProfileResearchOverview />
-        <ProfileActivitiesSection />
         <ProfileEducationSection />
+        <ProfileActivitiesSection />
         <ProfileAffiliationsSection />
         <ProfileExternalProfilesSection />
         <ProfileContactSection />

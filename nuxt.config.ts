@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
 
   // モジュール設定
-  modules: ["@nuxt/content", "@nuxt/ui"],
+  modules: ["@nuxt/ui"],
   app: {
     head: {
       title: "mayu2664.jp - KAWASHIMA Mayu",
@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
-          content: "KAWASHIMA Mayuのポートフォリオサイトです。",
+          content: "川島雅結（KAWASHIMA Mayu）の研究者・技術者プロフィール。情報学、情報法、サイバーセキュリティ法制を研究しています。",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
