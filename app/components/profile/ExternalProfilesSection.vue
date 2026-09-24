@@ -6,7 +6,12 @@
       </h2>
 
       <ul class="mt-9 grid border-t border-[#dbe7f0] sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3">
-        <li v-for="link in links" :key="link.name" class="border-b border-[#dbe7f0]">
+        <li
+          v-for="(link, index) in links"
+          :key="link.name"
+          class="border-b border-[#dbe7f0]"
+          :class="index === 0 ? 'sm:col-span-2 lg:col-span-3' : ''"
+        >
           <a :href="link.url" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between gap-6 py-5">
             <span>
               <span class="block text-slate-800 transition-colors group-hover:text-[#397db8]">{{ link.name }}</span>
@@ -22,6 +27,7 @@
 
 <script setup lang="ts">
 const links = [
+  { name: "Portfolio", description: "制作物・技術活動", url: "https://portfolio.shiomiolog.com/" },
   { name: "researchmap", description: "研究者プロフィール・研究業績", url: "https://researchmap.jp/mayu2664" },
   { name: "ORCID", description: "0009-0008-4197-3331", url: "https://orcid.org/0009-0008-4197-3331" },
   { name: "GitHub", description: "@shiomiolog", url: "https://github.com/shiomiolog" },
