@@ -1,12 +1,21 @@
 <template>
   <section id="top" class="flex min-h-[100svh] items-center border-b border-[#dbe7f0]">
     <div class="mx-auto w-full max-w-5xl px-6 pb-20 pt-32 sm:pb-24 sm:pt-36">
-      <img src="/images/profile.png" alt="川島雅結のプロフィール画像" class="size-20 rounded-full object-cover">
+      <div class="flex items-center gap-6 sm:gap-8">
+        <img
+          src="/images/profile.png"
+          alt="川島雅結のプロフィール画像"
+          class="size-24 shrink-0 rounded-full object-cover object-top sm:size-28"
+        >
 
-      <h1 class="mt-8 text-4xl font-normal tracking-tight text-[#172033] sm:text-5xl">
-        川島 雅結
-      </h1>
-      <p class="mt-2 text-xl text-slate-500">KAWASHIMA Mayu</p>
+        <div>
+          <h1 class="text-4xl font-normal tracking-tight text-[#172033] sm:text-5xl">
+            川島 雅結
+          </h1>
+          <p class="mt-2 text-xl text-slate-500">KAWASHIMA Mayu</p>
+          <p class="mt-1 text-base text-slate-400">@mayu2664</p>
+        </div>
+      </div>
 
       <div class="mt-10 space-y-1 text-base leading-7 text-slate-800">
         <p>情報セキュリティ / 情報法</p>

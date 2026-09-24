@@ -35,6 +35,28 @@
 
         <section class="activity-group grid gap-5 sm:grid-cols-[12rem_1fr] sm:gap-10">
           <header>
+            <h3 class="font-medium text-[#397db8]">Projects</h3>
+            <p class="mt-1 text-sm text-slate-500">プロジェクト</p>
+          </header>
+
+          <ul class="divide-y divide-[#dbe7f0] border-y border-[#dbe7f0]">
+            <li v-for="item in projects" :key="item.name" class="py-7">
+              <a
+                v-if="item.url"
+                :href="item.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="leading-7 text-slate-800 transition-colors hover:text-[#397db8] hover:underline"
+              >
+                {{ item.name }} ↗
+              </a>
+              <p class="mt-2 leading-7 text-slate-500">{{ item.description }}</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="activity-group grid gap-5 sm:grid-cols-[12rem_1fr] sm:gap-10">
+          <header>
             <h3 class="font-medium text-[#397db8]">Academic Activities</h3>
             <p class="mt-1 text-sm text-slate-500">研究活動</p>
           </header>
@@ -94,6 +116,14 @@ const outputGroups: ActivityGroup[] = [
 ]
 
 const visibleOutputGroups = outputGroups.filter((group) => group.items.length > 0)
+
+const projects: ActivityItem[] = [
+  {
+    name: "Virtual YouTuber『汐猫みお』の企画・運営",
+    description: "情報セキュリティ、情報法、プログラミングなどをテーマに、配信・動画制作・Webサイト運営を行っています。",
+    url: "https://shiomiolog.com/",
+  },
+]
 
 const academicActivities: ActivityItem[] = [
   {
