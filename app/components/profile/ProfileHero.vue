@@ -11,7 +11,7 @@
             height="144"
             fetchpriority="high"
             decoding="async"
-            class="size-full object-cover object-top [image-rendering:auto]"
+            class="size-full object-cover [image-rendering:auto]"
           >
         </div>
 

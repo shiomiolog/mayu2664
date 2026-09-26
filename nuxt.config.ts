@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui"],
   app: {
     head: {
+      htmlAttrs: { lang: "ja" },
       title: "mayu2664.jp - KAWASHIMA Mayu",
       meta: [
         { charset: "utf-8" },
@@ -19,7 +20,10 @@ export default defineNuxtConfig({
           content: "川島雅結（KAWASHIMA Mayu）の研究者・技術者プロフィール。情報学、情報法、サイバーセキュリティ法制を研究しています。",
         },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+        { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
+      ],
     },
   },
 });
