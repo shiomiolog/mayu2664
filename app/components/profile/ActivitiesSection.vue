@@ -113,6 +113,17 @@ const outputGroups: ActivityGroup[] = [
       },
     ],
   },
+  {
+    title: "Events",
+    label: "イベント企画・運営",
+    items: [
+      {
+        name: "shiomiolog.dev #1 — GPT-6 / Claude Fable 5.1 時代の AI・LLM 利活用",
+        description: "IT勉強会『shiomiolog.dev』の第1回として、2026年10月23日に東京・五反田で開催予定。企画・運営。",
+        url: "https://luma.com/ctwe6qwk",
+      },
+    ],
+  },
 ]
 
 const visibleOutputGroups = outputGroups.filter((group) => group.items.length > 0)

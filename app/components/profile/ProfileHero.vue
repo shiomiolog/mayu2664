@@ -2,11 +2,18 @@
   <section id="top" class="flex min-h-[100svh] items-center border-b border-[#dbe7f0]">
     <div class="mx-auto w-full max-w-5xl px-6 pb-20 pt-32 sm:pb-24 sm:pt-36">
       <div class="flex items-center gap-6 sm:gap-8">
-        <img
-          src="/images/profile.png"
-          alt="川島雅結のプロフィール画像"
-          class="size-24 shrink-0 rounded-full object-cover object-top sm:size-28"
-        >
+        <div class="size-28 shrink-0 overflow-hidden rounded-full sm:size-32 lg:size-36">
+          <img
+            src="/images/profile-avatar-288.png"
+            srcset="/images/profile-avatar-288.png 2x, /images/profile-avatar-432.png 3x"
+            alt="川島雅結のプロフィール画像"
+            width="144"
+            height="144"
+            fetchpriority="high"
+            decoding="async"
+            class="size-full object-cover object-top [image-rendering:auto]"
+          >
+        </div>
 
         <div>
           <h1 class="text-4xl font-normal tracking-tight text-[#172033] sm:text-5xl">
